@@ -1,20 +1,8 @@
-
-@font-face {
-    font-family: "Libian";
-    src: url("./resources/Libian.otf");
-}
-
 html{
     text-align: center;
 }
-body{
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    
+#name{
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
-main h1{
-    font-family: Libian;
-}
+
