@@ -1,8 +1,104 @@
-html{
-    text-align: center;
+@font-face {
+  font-family: 'Dogica';
+  src: url('resources/Dogica.eot');
+  src: url('resources/Dogica.eot?#iefix') format('embedded-opentype'),
+      url('resources/Dogica.woff2') format('woff2'),
+      url('resources/Dogica.woff') format('woff'),
+      url('resources/Dogica.ttf') format('truetype'),
+      url('resources/Dogica.svg#Dogica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-#name{
-    text-align: center;
-    color: rgb(0, 0, 0);
+@font-face {
+  font-family: 'Dogica Pixel';
+  src: url('resources/Dogica_Pixel_Bold.eot');
+  src: url('resorces/Dogica_Pixel_Bold.eot?#iefix') format('embedded-opentype'),
+      url('resources/Dogica_Pixel_Bold.woff2') format('woff2'),
+      url('resources/Dogica_Pixel_Bold.woff') format('woff'),
+      url('resources/Dogica_Pixel_Bold.ttf') format('truetype'),
+      url('resources/Dogica_Pixel_Bold.svg#Dogica_Pixel_Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+#name {
+  font-family: 'Dogica Pixel';
+  font-size: 60px;
+  font-weight: normal;
+  font-style: bold;
+}
+body {
+  font-family:'Lucida Console', monospace;
+  font-size: 18px;
+  color: #111;
+  background-color: white;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh; min-height:100dvh;
+  text-align: center;
+}
+svg { width: 100%; height: auto; }
+.svg-container { width: 100%; max-width: 400px; display: inline-block; }
+.separator { letter-spacing: -9px; }
+hr { border: none; height: 2px; background-color: lightgrey; width: 100%; margin: 30px auto; }
+table { border-collapse: collapse; text-align: center; width: 100%; }
+td {
+  padding: 5px 20px;
+  border: 1px solid #dddddd;
+}
+.quiet, .links-container a { color: inherit; }
+.links-container { font-size: 24px; margin: 20px; }
+.links-container a { text-decoration: none; margin: 0 10px; }
+.product-photo { display: block; max-width: 640px; width: 100%; margin: 0 auto; }
+.faqtable dt { margin-bottom: 0.75em; font-style: italic; }
+.faqtable dd { margin-left: 0; margin-bottom: 2em; }
+
+.repo-card {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
 }
 
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.repo-info h2 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.repo-info p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.repo-stats {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}

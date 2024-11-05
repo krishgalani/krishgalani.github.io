@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Krish Galani</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <main>
-      <h1>
-        Krish Galani
-      </h1>
-      <nav class="nav-tabs">
-        <a href="https://github.com/krishgalani">Github</a>
-        <a href="contact.html">Contact</a>
-        <a href="Krish - Resume.docx">Resume</a>
-      </nav>
-    </main>
-    <script src="script.js" async defer></script>
-  </body>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <title>Krish Galani</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="resources/Dogica.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="Dogica_Pixel_Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <main class="flex flex-col items-center " >
+    <div class="landing">
+        <h1 id="name">Krish Galani</h1>
+        <div class="links-container">
+          <a href="#about">about</a><span class="separator">|</span>
+          <a href="#projects">projects</a><span class="separator">|</span>
+          <a href="#contact">contact</a><span class="separator">|</span>
+          <a href="resources/KrishGalani-CV.pdf">cv</a>
+        </div>
+    </div>
+  </main>
+  <hr>
+  <h2 id="about">about</h2>
+  <p>I am a recent graduate of Boston University ('24) looking for full-stack developer starting positions, and startup opportunities. I enjoy everything from data scraping, to distributed systems challenges, to applied research.</p>
+  <hr>
+  <h2 id="projects">projects</h2>
+  <div class="repo-card">
+    <div class="repo-info">
+      <img id="repo-avatar" alt="Owner Avatar" class="avatar">
+      <h2 id="repo-name">Project Name</h2>
+      <p id="repo-description">Project Description</p>
+      <div class="repo-stats">
+        <span>⭐ Stars: <span id="repo-stars">Loading...</span></span>
+        <span>🍴 Forks: <span id="repo-forks">Loading...</span></span>
+      </div>
+    </div>
+    <a id="repo-link" href="#" target="_blank" class="repo-link">View on GitHub</a>
+  </div>
+  <hr>
+  <h2 id="contact">contact</h2>
+  <p><b>Email: </b>krishdgala@gmail.com</p>
+  <!-- <p><b>Discord: </b>krishdgala@gmail.com</p> -->
+</body>
 </html>
