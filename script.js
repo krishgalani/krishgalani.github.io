@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const repoCards = document.querySelectorAll('.repo-card');
-  
     repoCards.forEach(card => {
       const username = 'krishgalani'
       const repoName = card.getAttribute('data-repo');
@@ -12,9 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
           // Update the card with fetched data
           card.querySelector('.repo-name').textContent = data.name || 'No name available';
           card.querySelector('.repo-description').textContent = data.description || 'No description available';
-        //   card.querySelector('.repo-stars').textContent = data.stargazers_count || '0';
-        //   card.querySelector('.repo-forks').textContent = data.forks_count || '0';
-        //   card.querySelector('.avatar').src = data.owner.avatar_url || '';
           card.querySelector('.repo-link').href = data.html_url || '#';
         })
         .catch(error => {
